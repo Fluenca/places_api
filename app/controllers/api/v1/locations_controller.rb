@@ -1,9 +1,9 @@
 class Api::V1::LocationsController < Api::V1::BaseController
   def index
-    @places = [{
-      long: 1,
-      lat: 2,
-      address: "here"
-    }]
+    place = {
+      lat: params[:lat],
+      long: params[:lng]
+    }
+    @places = [place]
   end
 end
