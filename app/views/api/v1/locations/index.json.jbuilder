@@ -1,3 +1,3 @@
-json.array! @locations do |location|
-  json.extract! location, :long, :lat, :address
+json.array! @places do |place|
+  json.extract! place, :long, :lat, :address
 end
