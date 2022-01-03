@@ -1,3 +1,4 @@
-json.array! @places do |place|
-  json.extract! place, :long, :lat
+json.array! @response  do |place|
+  json.set! :Museum, place['place_name']
 end
+
